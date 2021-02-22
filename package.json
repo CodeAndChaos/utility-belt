@@ -16,7 +16,7 @@
     "test": "jest --watch",
     "prebuild": "tsc --emitDeclarationOnly",
     "build": "esbuild src/index.ts --bundle --outfile=dist/index.js"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/CodeAndChaos/utility-belt"
