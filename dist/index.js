@@ -1,18 +1,5 @@
-(() => {
-  // src/Numbers/generateRandomInt.ts
-  var generateRandomInteger = (min = 0, max = Number.MAX_SAFE_INTEGER) => {
-    if (!Number.isInteger(min) || !Number.isInteger(max)) {
-      throw new TypeError(`Detected non Integer Input `);
-    }
-    if (min > max) {
-      throw new RangeError(`Minimum ${min}, is greater than Maximum ${max}`);
-    }
-    const randomFactor = (max + 1 - min) * Math.random();
-    return min + Math.floor(randomFactor);
-  };
-
-  // src/Numbers/Numbers.ts
-  var Numbers = class {
-  };
-  Numbers.generateRandomInteger = generateRandomInteger;
-})();
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Numbers = void 0;
+var Numbers_1 = require("./Numbers/Numbers");
+Object.defineProperty(exports, "Numbers", { enumerable: true, get: function () { return Numbers_1.Numbers; } });
