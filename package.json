@@ -1,8 +1,17 @@
 {
   "name": "@codeandchaos/utility-belt",
+  "type": "module",
   "version": "0.0.3",
-  "types": "dist/index.d.js",
-  "main": "dist/index.js",
+  "types": "dist/main.d.js",
+  "main": "dist/main.js",
+  "exports": {
+    ".": "./dist/main.js"
+  },
+  "typesVersions": {
+    "*": {
+      "main.d.ts": ["dist/main.d.ts"]
+    }
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.20",

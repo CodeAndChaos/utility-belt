@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Numbers = void 0;
-const generateRandomInt_1 = require("./generateRandomInt");
-class Numbers {
+import { generateRandomInteger } from "./generateRandomInt";
+export class Numbers {
 }
-exports.Numbers = Numbers;
-Numbers.generateRandomInteger = generateRandomInt_1.generateRandomInteger;
+Numbers.generateRandomInteger = generateRandomInteger;
+//# sourceMappingURL=Numbers.js.map
